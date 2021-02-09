@@ -1,0 +1,131 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.base{
+	-fx-font-family: Consolas; 
+	-fx-control-inner-background:#000000;
+	-fx-highlight-text-fill: #000000;
+	-fx-focus-color: transparent;
+	-fx-text-box-border: transparent;
+    -fx-faint-focus-color: transparent;
+	-fx-border-radius: 0 0 0 0;
+	-fx-background-radius: 0 ;
+}
+
+.content {
+    -fx-background-radius: 0 ;
+    -fx-border-radius: 0 0 0 0;
+}
+
+.root {
+    -fx-background-color: #000000 ;
+}
+
+/****************************************************************
+ 
+  ScrollBar Skin  
+ 
+****************************************************************/
+.scroll-bar{
+ -fx-background-color: rgb(96,96,96);
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+ -fx-background-color: transparent;
+ -fx-border-color:transparent;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal .track-background {
+ -fx-background-color: transparent;
+ -fx-background-insets: 0;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb {
+ -fx-background-color: rgb(211,211,211);
+ -fx-background-insets: 4 0 4 0;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .thumb {
+ -fx-background-color: rgb(211,211,211);
+ -fx-background-insets: 0 4 0 4;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+ -fx-background-color: rgb(231,231,231);
+}
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed {
+ -fx-background-color: rgb(255,255,255);
+}
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 2em;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 2em;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-arrow {
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-background-color: rgb(211,211,211);
+ -fx-padding: 0.25em;
+ -fx-rotate: -90;
+}
+.scroll-bar:vertical .increment-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 0;
+}
+.scroll-bar:horizontal .decrement-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 90;
+}
+.scroll-bar:vertical .decrement-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: -180;
+}
+.scroll-bar:vertical:focused,
+.scroll-bar:horizontal:focused {
+ -fx-background-color: transparent,rgb(96,96,96),rgb(96,96,96);
+}
+
+
+/****************************************************************
+ 
+  Colors for the text
+ 
+****************************************************************/
+
+.green{
+	-fx-highlight-fill: #00ff00;
+	-fx-text-fill: #00ff00;
+}
+
+.cyan{
+	-fx-highlight-fill: #00FFFF;
+	-fx-text-fill: #00FFFF;
+}
+
+.blue{
+	-fx-highlight-fill: #0000FF;
+	-fx-text-fill: #0000FF; 
+	-fx-font-family: Consolas; 
+	-fx-control-inner-background:#000000;
+	-fx-highlight-text-fill: #000000;
+}
+
+.purple{
+	-fx-highlight-fill: #800080;
+	-fx-text-fill: #800080;
+}
+
+
